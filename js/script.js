@@ -56,16 +56,15 @@ const resultEmail = document.getElementById('email-result');
 
 const emailAuthorized = ['pincopallo@gamil.com', 'pallopinco@gmail.com', 'gialloposso@gmail.com', 'possogiallo@gmail.com'];
 
-const emailUser = document.getElementById('email').value;
+resultButton.addEventListener('click', function()) {
+    const emailUser = document.getElementById('email').value;
+    let authorized = 'Access Denied';
 
-let authorized = '';
-for(let i = 0; i < emailAuthorized.length; i++); {
-    if(emailAuthorized[i] === emailUser) {
-        authorized = 'Access Granted'
-    } else {
-        authorized = 'Access Denied'
+    for (let i = 0; i < emailAuthorized.length; i++) {
+      if (emailAuthorized[i] === emailUser) {
+        authorized = 'Access Granted';
+      }
     }
 }
 
-
-authorized.innerHTML = 'Email authorized';
+resultEmail.innerHTML = authorized;
