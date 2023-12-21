@@ -49,3 +49,23 @@ resultWinner.innerHTML = `Vincitore: ${winner}`;
  5 - Verifico se la email é nella lista di email autorizzate
  6 - Stampo il risultato in pagina
 */
+
+const resultButton = document.getElementById('verify-button');
+const resultEmail = document.getElementById('email-result');
+
+
+const emailAuthorized = ['pincopallo@gamil.com', 'pallopinco@gmail.com', 'gialloposso@gmail.com', 'possogiallo@gmail.com'];
+
+const emailUser = document.getElementById('email').value;
+
+let authorized = '';
+for(let i = 0; i < emailAuthorized.length; i++); {
+    if(emailAuthorized[i] === emailUser) {
+        authorized = 'Access Granted'
+    } else {
+        authorized = 'Access Denied'
+    }
+}
+
+
+authorized.innerHTML = 'Email authorized';
