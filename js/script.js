@@ -33,3 +33,19 @@ console.log(winner);
 
 resultDice.innerHTML = `Primo Giocatore: ${diceFirstPlayer}<br>Secondo Giocatore: ${diceSecondPlayer}`;
 resultWinner.innerHTML = `Vincitore: ${winner}`;
+
+
+
+// ----------------------------------------------------------------------------------------
+
+
+// ESERCIZIO 2
+
+/* 
+ 1 - Recupero elementi dal DOM
+ 2 - Creo un array di email valide
+ 3 - Aggiungo un addEventListener sul btn con la funzione ''on click''
+ 4 - Ottengo l'email inserita dall'utente
+ 5 - Verifico se la email é nella lista di email autorizzate
+ 6 - Stampo il risultato in pagina
+*/
