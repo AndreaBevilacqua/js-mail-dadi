@@ -52,12 +52,14 @@ resultWinner.innerHTML = `Vincitore: ${winner}`;
 
 const resultButton = document.getElementById('verify-button');
 const resultEmail = document.getElementById('email-result');
+const emailUser = document.getElementById('input');
 
 
-const emailAuthorized = ['pincopallo@gamil.com', 'pallopinco@gmail.com', 'gialloposso@gmail.com', 'possogiallo@gmail.com'];
+const emailAuthorized = ['pincopallo@gmail.com', 'pallopinco@gmail.com', 'gialloposso@gmail.com', 'possogiallo@gmail.com'];
 
-resultButton.addEventListener('click', function()) {
-    const emailUser = document.getElementById('email').value;
+resultButton.addEventListener('click', function(){
+  const emailUser = input.value.trim();
+
     let authorized = 'Access Denied';
 
     for (let i = 0; i < emailAuthorized.length; i++) {
@@ -65,6 +67,6 @@ resultButton.addEventListener('click', function()) {
         authorized = 'Access Granted';
       }
     }
-}
+    resultEmail.innerHTML = authorized;
+});
 
-resultEmail.innerHTML = authorized;
